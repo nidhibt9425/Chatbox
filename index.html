@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chatbox</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">My Favorite Chatbox</div>
+        <div class="chat-box" id="chat-box">Chat With Bot
+        <div class="message user">Hi,are you there</div>
+        <div class="message bot">hi,how can i assist you!</div>
+        </div>
+        <div class="chat-input">
+            <button onclick="startListening()"><i class="fas fa-microphone"></i></button>
+            <button onclick="insertEmoji()"><i class="far fa-smile"></i></button>
+
+            <input type="text" id="message-input" placeholder="Send a message">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
